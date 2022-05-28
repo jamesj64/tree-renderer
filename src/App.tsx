@@ -1,11 +1,11 @@
 import React from 'react';
-import { TreeInput } from './TreeInput';
+import { TreeGenerator } from './TreeGenerator';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <TreeInput />
+      <TreeGenerator />
     </div>
   );
 }
