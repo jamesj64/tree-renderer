@@ -1,0 +1,47 @@
+{
+    "formula": "-(((P -> Q) -> (P -> P)) -> (((P -> P) -> P) -> (S -> P)))",
+    "children": [
+      {
+        "formula": "-(((P -> P) -> P) -> (S -> P))",
+        "children": [
+          {
+            "formula": "-(S -> P)",
+            "children": [
+              {
+                "formula": "S",
+                "children": [
+                  {
+                    "formula": "-P",
+                    "children": [
+                      {
+                        "formula": "(P -> P) -> P",
+                        "children": [
+                          {
+                            "formula": "-(P -> P)",
+                            "children": [
+                              {
+                                "formula": "P",
+                                "children": [
+                                  "Closed"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "formula": "P",
+                            "children": [
+                              "Closed"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
