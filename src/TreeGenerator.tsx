@@ -28,7 +28,7 @@ const TreeGenerator = () => {
             }
         });
     };
-    let treeThing;
+
     const handleSubmit = () => {
         setTreeData(prevState => {
             return {
@@ -36,10 +36,8 @@ const TreeGenerator = () => {
                 submitted: true
             }
         });
-        treeThing = Tree(treeData.jsonValue);
-        console.log(treeThing);
-        
     }
+    
     if (!treeData.submitted) {
         return(<TreeInput
             handleSubmit={handleSubmit}
