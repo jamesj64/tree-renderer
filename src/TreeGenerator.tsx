@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Tree } from './Tree';
 import { TreeInput } from "./TreeInput";
 
 const jsonParseOrNull = (str: string) => {
@@ -27,7 +28,7 @@ const TreeGenerator = () => {
             }
         });
     };
-
+    let treeThing;
     const handleSubmit = () => {
         setTreeData(prevState => {
             return {
@@ -35,7 +36,9 @@ const TreeGenerator = () => {
                 submitted: true
             }
         });
-        console.log(treeData);
+        treeThing = Tree(treeData.jsonValue);
+        console.log(treeThing);
+        
     }
     if (!treeData.submitted) {
         return(<TreeInput
@@ -45,7 +48,7 @@ const TreeGenerator = () => {
             buttonDisabled={treeData.jsonValue == null}
         />);   
     } else {
-        return(<h1>Generating Tree from JSON...</h1>);
+        return(Tree(treeData.jsonValue));
     }
 };
 

@@ -22,7 +22,7 @@
                               {
                                 "formula": "P",
                                 "children": [
-                                  "Closed"
+                                  {"formula": "Closed"}
                                 ]
                               }
                             ]
@@ -30,7 +30,7 @@
                           {
                             "formula": "P",
                             "children": [
-                              "Closed"
+                              {"formula": "Closed"}
                             ]
                           }
                         ]
